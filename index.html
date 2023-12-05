@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/public/css/styles.css">
+<body>
+    <div class="container">
+        <form id="contact" action="/envio" method="post">
+            <h3>Elección de Carrera Profesional</h3>
+            <div class="opciones1">
+                <label class="opciones" for="opcion-sistemas">Análisis de Sistemas</label>
+                <input type="radio" name="Carrera" id="opcion-sistemas" value="analisis-sistemas" required />
+                <label class="opciones" for="opcion-agraria">Producción Agraria</label>
+                <input type="radio" name="Carrera" id="opcion-agraria" value="produccion-agraria" required />
+
+            </div>
+            <fieldset>
+                <input placeholder="Apellidos y Nombres" type="text" name="Nombres" tabindex="1" required autofocus>
+            </fieldset>
+            <fieldset>
+                <input placeholder="Número de DNI" type="text" name="DNI" tabindex="2" required>
+            </fieldset>
+            <fieldset>
+                <input placeholder="Fecha de Nacimiento" type="date" name="FechaNacimiento" tabindex="3" required>
+            </fieldset>
+            <fieldset>
+                <input placeholder="Correo Institucional" type="email" name="Correo" tabindex="4" required>
+            </fieldset>
+            <fieldset>
+                <input placeholder="Contraseña" type="password" name="Contrasena" tabindex="5" required>
+            </fieldset>
+            <fieldset>
+                <label for="terminos-condiciones">
+                    <input type="checkbox" id="terminos-condiciones" name="TerminosCondiciones" required>
+                    Aceptar los Términos y Condiciones
+                </label>
+            </fieldset>
+
+            <fieldset>
+                <button name="submit" type="submit" id="contact-submit" data-submit="...Sending">Enviar</button>
+            </fieldset>
+        </form>
+
+
+
+    </div>
+
+</body>
+
+</html>
